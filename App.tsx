@@ -4,6 +4,7 @@ import { motion, AnimatePresence, useScroll, useSpring, useMotionValueEvent } fr
 import Hero from './components/Hero';
 import Invitation from './components/Invitation';
 import TulipGarden from './components/TulipGarden';
+import VoiceMessage from './components/VoiceMessage';
 
 const App: React.FC = () => {
   const [stage, setStage] = useState<'scroll' | 'invite' | 'celebrate'>('scroll');
@@ -111,9 +112,7 @@ const App: React.FC = () => {
                     <div className="absolute top-0 left-0 w-12 h-12 md:w-16 md:h-16 border-t-2 border-l-2 border-pink-500/30 rounded-tl-[1.5rem] md:rounded-tl-[2rem] group-hover:border-pink-400/50 transition-colors" />
                     <div className="absolute bottom-0 right-0 w-12 h-12 md:w-16 md:h-16 border-b-2 border-r-2 border-pink-500/30 rounded-br-[1.5rem] md:rounded-br-[2rem] group-hover:border-pink-400/50 transition-colors" />
 
-                    <p className="text-slate-200 text-sm md:text-xl leading-relaxed font-medium italic text-left first-letter:text-4xl md:first-letter:text-5xl first-letter:font-romantic first-letter:text-pink-400 first-letter:mr-2 first-letter:float-left">
-                      Hi Mahal ko Happy Valentine`s Days hihi, sorry eto lang ang gift ko HAHAHAHA wala kase ako pera and sana maging happy ka sa simpleng gift ko na ito pero ill promise bb babawi ako kapag meron akong money, anyways I know this first time ulit na mag love letter ako sayo pero upgraded website na hindi nakupas at nawawala or hindi mo makakalimutan kung saan nakalagay mwhehehe ginawa ko to para everytime na you sad eh ioopen mo lang ito always tong open for you and i hope you will be happy sa simple gift ko Mahal na mahal kita may Moon. Happy Valentines day hihi.
-                    </p>
+                    <VoiceMessage />
 
                     <div className="mt-8 pt-6 border-t border-pink-500/10 flex flex-col sm:flex-row justify-between items-center gap-4">
                         <motion.button
